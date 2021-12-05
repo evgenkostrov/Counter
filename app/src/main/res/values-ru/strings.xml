@@ -5,4 +5,6 @@
     <string name="count">Считай</string>
     <string name="_0_1000">0/1000</string>
     <string name="space">/</string>
+    <string name="zero">0/1000</string>
+    <string name="symbols">символы</string>
 </resources>

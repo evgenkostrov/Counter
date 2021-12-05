@@ -23,10 +23,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.textviewFirst.text = "0/1000"
+        binding.textviewFirst.text = getString(R.string.zero)
         binding.root.setOnClickListener {
             counter++
-            binding.textviewFirst.text = "$counter/1000"
+            "$counter/1000".also { binding.textviewFirst.text = it }
         }
 
         binding.center.setOnClickListener {

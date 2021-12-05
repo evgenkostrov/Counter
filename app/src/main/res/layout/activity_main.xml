@@ -63,7 +63,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageview_first"
         app:startIconDrawable="@drawable/ic_baseline_sort_by_alpha_24"
-        app:suffixText="symbols">
+        app:suffixText="@string/symbols">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textInputEditTextHeight"
