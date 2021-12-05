@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Counter</string>
+    <string name="counter_symbols">Counter Symbols</string>
+    <string name="count">Count</string>
+    <string name="_0_1000">0/1000</string>
+    <string name="space">/</string>
+</resources>

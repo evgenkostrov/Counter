@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Счетчик</string>
+    <string name="counter_symbols">Счетчик символов</string>
+    <string name="count">Считай</string>
+    <string name="_0_1000">0/1000</string>
+    <string name="space">/</string>
+</resources>
