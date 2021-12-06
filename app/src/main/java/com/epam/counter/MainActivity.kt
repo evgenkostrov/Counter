@@ -26,7 +26,17 @@ class MainActivity : AppCompatActivity() {
         binding.textviewFirst.text = getString(R.string.zero)
         binding.root.setOnClickListener {
             counter++
-            "$counter/1000".also { binding.textviewFirst.text = it }
+            "$counter/1000 mAh".also { binding.textviewFirst.text = it }
+        }
+
+        binding.root.setOnClickListener {
+            counter++
+            "$counter/1000 mAh".also { binding.textviewFirst.text = it }
+        }
+
+        binding.buttonFirst.setOnClickListener {
+            counter--
+            "$counter/1000 mAh".also { binding.textviewFirst.text = it }
         }
 
         binding.center.setOnClickListener {
