@@ -11,8 +11,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private lateinit var binding: ActivityMainBinding
-    private var counter = 0
-    private var counterCenter = 0
+    private var counter = 100_000
+    private val counterMax=100_000
     private var counterTopStart = 0
     private var counterTopEnd = 0
     private var counterBottomStart = 0
@@ -22,27 +22,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
-        binding.textviewFirst.text = getString(R.string.zero)
-        binding.root.setOnClickListener {
-            counter++
-            "$counter/1000 mAh".also { binding.textviewFirst.text = it }
-        }
+        val startText = counter.toString() + "/" + counterMax.toString() + " " + getString(R.string.mAh)
+
+        binding.textviewFirst.text = startText
 
         binding.root.setOnClickListener {
-            counter++
-            "$counter/1000 mAh".also { binding.textviewFirst.text = it }
+            counter--
+            "$counter/$counterMax ${getString(R.string.mAh)}".also { binding.textviewFirst.text = it }
         }
 
         binding.buttonFirst.setOnClickListener {
-            counter--
-            "$counter/1000 mAh".also { binding.textviewFirst.text = it }
+            if(counter<counterMax)
+            counter++
+            "$counter/$counterMax mAh".also { binding.textviewFirst.text = it }
         }
 
-        binding.center.setOnClickListener {
-            counterCenter++
-            binding.center.text = counterCenter.toString()
-        }
         binding.tvTopEnd.setOnClickListener {
             counterTopEnd++
             binding.tvTopEnd.text = counterTopEnd.toString()
@@ -69,6 +65,7 @@ class MainActivity : AppCompatActivity() {
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
         counter = savedInstanceState.getInt(KEY_COUNTER)
-
+        val newText = counter.toString() + "/" + counterMax.toString() + " " + getString(R.string.mAh)
+        binding.textviewFirst.text=newText
     }
 }

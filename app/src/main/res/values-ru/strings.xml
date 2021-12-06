@@ -3,9 +3,9 @@
     <string name="app_name">Счетчик</string>
     <string name="counter_symbols">Счетчик символов</string>
     <string name="counter_symbols1">Счетчик символов*</string>
-    <string name="count">Считай-1</string>
-    <string name="_0_1000">0/1000 мАч</string>
+    <string name="count">Заряжай!</string>
+    <string name="mAh">мАч</string>
     <string name="space">/</string>
-    <string name="zero">0/1000</string>
     <string name="symbols">символы</string>
+    <string name="counter_capacity">Счетчик емкости</string>
 </resources>

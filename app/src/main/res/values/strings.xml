@@ -2,11 +2,11 @@
     <string name="app_name">Counter</string>
     <string name="counter_symbols">Counter Symbols</string>
     <string name="counter_symbols1">Counter Symbols*</string>
-    <string name="count">Count-1</string>
-    <string name="_0_1000">0/1000 mAh</string>
+    <string name="count">Charge!</string>
+    <string name="mAh">mAh</string>
     <string name="space">/</string>
-    <string name="zero">0/1000</string>
     <string name="symbols">symbols</string>
+    <string name="counter_capacity">Counter capacity</string>
 
 
 </resources>

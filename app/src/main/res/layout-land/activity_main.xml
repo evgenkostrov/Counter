@@ -36,9 +36,10 @@
         android:paddingBottom="8dp"
         android:textColor="@color/grey"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageview_first"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_first" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textInputLayoutHeight"/>
 
     <Button
         android:id="@+id/button_first"
@@ -55,8 +56,9 @@
         android:textColor="@color/red"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutHeight" />
+        app:layout_constraintEnd_toStartOf="@id/imageview_first"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textInputLayoutHeight"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutHeight"
@@ -87,7 +89,6 @@
             android:maxLength="1000" />
 
     </com.google.android.material.textfield.TextInputLayout>
-
 
     <ImageView
         android:id="@+id/imageview_first"
