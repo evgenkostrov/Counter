@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         binding.buttonFirst.setOnClickListener {
             if(counter<counterMax)
             counter++
-            "$counter/$counterMax mAh".also { binding.textviewFirst.text = it }
+            "$counter/$counterMax ${getString(R.string.mAh)}".also { binding.textviewFirst.text = it }
         }
 
         binding.tvTopEnd.setOnClickListener {
